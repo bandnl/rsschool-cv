@@ -23,36 +23,36 @@ I believe, that FrontEnd developing is exactly what I want to do and I am able t
 ### Code example
 ***************
 ```
- function person(pName, pAge) {
-                return {
-                    name: pName,
-                    age: pAge,
-                    data: function() {
-                        document.write(this.name + this.age);
-                    },
-                    dCar: function(car) {
-                        document.write(this.name + ", возрастом " + this.age + " лет "  + "ведет машину марки " + car.model)
-                    }
-                }
-            }
-            function car (cModel) {
-                return {
-                model: cModel,
-                }
-            }
-            var info = person("Максим", 10);
-            info.data();
-            var iCar = car("Audi");
-            info.dCar(iCar)
+function hum(pName, pAge) {
+     return {
+        name: pName,
+        age: pAge,
+        data: function() {
+            document.write(this.name + this.age);
+        },
+        dCar: function(car) {
+             document.write(this.name + ", возрастом " + this.age + " лет "  + "ведет машину марки " + car.model)
+        }
+    }
+}
+function car (cModel) {
+    return {
+        model: cModel,
+    }
+}
+var info = hum("Максим", 10);
+info.data();
+var iCar = car("Audi");
+info.dCar(iCar)
 ```
 ### Education
 ************
-**University:** Belarusian National Technical University
-**Courses:**
+* **University:** Belarusian National Technical University
+* **Courses:**
     + [HTML&CSS](https://stepik.org/course/38218/syllabus?after_pass_reset=true)
     + [JavaScript for beginers](https://stepik.org/course/2223/syllabus)  
     + [Metanit.com](https://metanit.com/)
 *****************
 ### Language
 ****************
-English level - ***B1***
+#### English level - ***B1***
