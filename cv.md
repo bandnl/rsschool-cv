@@ -6,6 +6,7 @@
 + *E-mail:* danila.ban@mail.ru
 * *Telegram:* @ban_dnl
 * *GitHub:* [bandnl](https://github.com/bandnl)
+* *Discord:* CORN#4593
 
 ### A little bit about me
 *********************
