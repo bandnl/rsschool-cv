@@ -1,10 +1,130 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Task#2</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    </body>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>cv</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <header>
+          <section class="head">
+            <div class="wraper">
+              <div class="head__photo"></div>
+              <div class="head__container">
+                <div class="head__name">Danila Ban</div>
+                <div class="head__prof">Frontend Developer</div>
+                <div class="head__contacts contacts">
+                  <div class="contacts__address"><span class="sp sp-loctn">Location:</span>Minsk, Belarus</div>
+                  <div class="contacts__phone"><span class="sp sp-ph">Phone:</span> +375 25 764 70 75</div>
+                  <div class="contacts__email"><span class="sp sp-email">Email:</span> danila.ban@mail.ru</div>
+                  <div class="contacts__tg"><span class="sp sp-tg">Telegram:</span> @ban_dnl</div>
+                </div>
+                <nav>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </section>
+      </header>
+      <main>
+        <div class="wraper">
+          <section class="info">
+            <div class="info-cont">
+              <h2 class="title">About myself</h2>
+              <p class="info-content">I'm fourth year student of Belarusian National Technical University. By the end of university studing I'm losing interest to my profession. And now I'd like to expand my knowledge in another field.</p>
+              <p class="info-content">I believe, that FrontEnd developing is exactly what I want to do and I am able to do this. Skills</p>
+            </div>
+          </section>
+          <section class="education">
+            <div class="ed-cont">
+              <h2 class="title">Education</h2>
+              <ul>
+                <li class="univ"><span>Belarusian National Technical University</span></li>
+                <li class="courses">Courses:
+                  <ul>
+                      <li class="cours"><a class="cours__link" href="https://stepik.org/course/38218/syllabus?after_pass_reset=true">HTML&CSS</a></li>
+                      <li class="cours"><a class="cours__link" href="https://stepik.org/course/2223/syllabus">JavaScript for beginers</a></li>
+                      <li class="cours"><a class="cours__link" href="https://metanit.com/">Metanit.com</a></li>  
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <sectiion class="skills">
+            <h2 class="title">Skills</h2>
+            <div class="skills-cont">
+              <ul>
+                <li class="skills">JS</li>
+                <li class="skills">HTML</li>
+                <li class="skills">CSS</li>
+                <li class="skills">SASS/SCSS</li>
+                <li class="skills">Git</li>
+                <li class="skills">WebPack</li>
+              </ul>
+            </div>
+          </sectiion>
+          <section class="code">
+            <h2 class="title">Code example</h2>
+            <div class="code-cont">
+              <pre>
+                function hum(pName, pAge) {
+                  return {
+                      name: pName,
+                      age: pAge,
+                      data: function() {
+                          document.write(this.name + this.age);
+                      },
+                      dCar: function(car) {
+                          document.write(this.name + ", возрастом " + this.age + " лет "  + "ведет машину марки " + car.model)
+                      }
+                  }
+                }
+                function car (cModel) {
+                  return {
+                      model: cModel,
+                  }
+                }
+                let info = hum("Максим", 10);
+                info.data();
+                let iCar = car("Audi");
+                info.dCar(iCar)
+            </pre>
+            </div>
+          </section>
+          <section class="projects">
+            <h2 class="title">Projects</h2>
+            <div class="projects-cont">
+              <div class="project"></div>
+              <div class="project"></div>
+              <div class="project"></div>
+            </div>
+          </section>
+          <section class="lang">
+            <h2 class="title">Languages</h2>
+            <div class="lang-cont">
+              <ul>
+                <li class="language">Belarussian - native speaker</li>
+                <li class="language">Russian - native speaker</li>
+                <li class="language">English - B2</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <section class="footer">
+          <div class="footer-cont">
+            <a href="https://rs.school/" class="rss"></a>
+            <a href="https://github.com/bandnl" class="git"></a>
+          </div>
+        </section>
+      </footer>
+  </body>
 </html>
