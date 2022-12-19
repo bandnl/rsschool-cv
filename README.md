@@ -1,1 +1,1 @@
-# rsschool-cv
+https://bandnl.github.io/rsschool-cv/
