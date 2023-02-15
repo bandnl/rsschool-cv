@@ -177,10 +177,58 @@ li {
     background-size: contain;
 }
 
+.projects__wrapper {
+    position: relative;
+    min-height: 226px;
+    padding: 0;
+}
+
+.arrow__before {
+    content: url("./assets/arrow.png");
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 5px;
+    transform: rotate(-90deg);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.arrow__after {
+    content: url("./assets/arrow.png");
+    position: absolute;
+    top: calc(50% - 16px);
+    right: 5px;
+    transform: rotate(90deg);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.arrow_show {
+    visibility: visible;
+}
+
+.arrow_show:hover {
+    scale: 1.2;
+}
+
+.arrow_hide {
+    visibility: hidden;
+}
+
 .projects-cont {
+    position: absolute;
+    padding: 13px 13px;
     display: flex;
     justify-content: space-around;
-    padding: 13px 0;
+    gap: 13px;
+}
+
+.opened {
+    right: 0px;
+}
+
+.closed {
+    left: 0px;
 }
 
 .project {
