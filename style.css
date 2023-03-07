@@ -215,6 +215,10 @@ li {
     visibility: hidden;
 }
 
+.overflow-link {
+    overflow: visible;
+}
+
 .projects-cont {
     position: absolute;
     padding: 13px 13px;
