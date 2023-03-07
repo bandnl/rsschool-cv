@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>cv</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="./assets/cv.png">
+  </head>
+  <body>
+      <header>
+          <section class="head">
+            <div class="wraper">
+              <div class="flex">
+                <div class="head__photo"></div>
+                <div class="head__container">
+                  <div class="head__name"><h1>Danila Ban</h1></div>
+                  <div class="head__prof">Frontend Developer</div>
+                  <div class="head__contacts">
+                    <div class="contacts__address contacts">Location: <span class="sp sp-loctn">Minsk, Belarus</span></div>
+                    <div class="contacts__phone contacts">Phone: <span class="sp sp-ph">+375 25 764 70 75</span></div>
+                    <div class="contacts__email contacts">Email: <span class="sp sp-email">danila.ban@mail.ru</span></div>
+                    <div class="contacts__tg contacts">Telegram: <span class="sp sp-tg">@ban_dnl</span></div>
+                  </div>
+                </div>
+              </div>
+              <nav>
+                <ul class="navig">
+                  <li><a href="#ed">education</a></li>
+                  <li><a href="#skills">skills</a></li>
+                  <li><a href="#code">code example</a></li>
+                  <li><a href="#proj">my projects</a></li>
+                  <li><a href="#lang">languages</a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+      </header>
+      <main>
+        <div class="wraper">
+          <section class="info cont">
+            <div class="info-cont">
+              <h2 class="title">About myself</h2>
+              <div class="container">
+                <p class="info-content"><span>I'm</span> fourth year student of <a href="https://bntu.by/" class="link-bntu">Belarusian National Technical University</a>. By the end of university studing I'm losing interest to my profession. And now I'd like to expand my knowledge in another field.</p>
+                <p class="info-content"><span>I</span> believe, that FrontEnd developing is exactly what I want to do and I am able to do this.</p>
+              </div>
+            </div>
+          </section>
+          <section class="education cont">
+            <div class="ed-cont">
+              <h2 id="ed" class="title">Education</h2>
+              <div class="container">
+                <ul>
+                  <li class="educ"><a href="https://bntu.by/" class="link-bntu">Belarusian National Technical University</a></li>
+                  <li class="educ">Courses:
+                    <ul>
+                        <li class="cours"><a class="cours__link" href="https://stepik.org/course/38218/syllabus?after_pass_reset=true">HTML&amp;CSS</a></li>
+                        <li class="cours"><a class="cours__link" href="https://stepik.org/course/2223/syllabus">JavaScript for beginers</a></li>
+                        <li class="cours"><a class="cours__link" href="https://metanit.com/">Metanit.com</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="skills cont">
+            <div class="skills-cont">
+                <h2 id="skills" class="title">Skills</h2>
+                <div class="container">
+                  <ul class="skills-list">
+                    <li><span class="icon js"></span>JS</li>
+                    <li><span class="icon html"></span>HTML</li>
+                    <li><span class="icon css"></span>CSS</li>
+                    <li><span class="icon scss"></span>SASS/SCSS</li>
+                    <li><span class="icon git"></span>Git</li>
+                    <li><span class="icon wp"></span>WebPack</li>
+                  </ul>
+                </div>
+            </div>
+          </section>
+          <section id="code" class="code cont">
+            <h2 class="title">Code example</h2>
+            <div class="code-cont container">
+              <pre>
+                function hum(pName, pAge) {
+                  return {
+                      name: pName,
+                      age: pAge,
+                      data: function() {
+                          document.write(this.name + this.age);
+                      },
+                      dCar: function(car) {
+                          document.write(this.name + "
+                          , возрастом " + this.age + " лет "  + "
+                          ведет машину марки " + car.model)
+                      }
+                  }
+                }
+                function car (cModel) {
+                  return {
+                      model: cModel,
+                  }
+                }
+                let info = hum("Максим", 10);
+                info.data();
+                let iCar = car("Audi");
+                info.dCar(iCar)
+              </pre>
+            </div>
+          </section>
+          <section id="proj" class="projects cont">
+            <h2 class="title">Projects</h2>
+            <div class="projects__wrapper container">
+              <div class="arrow__before arrow_hide"></div>
+              <div class="projects-cont">
+                <a href="https://rolling-scopes-school.github.io/bandnl-JSFE2022Q3/codejam/four/index.html" target="_blank" class="overflow-link"><img src="./assets/codejam.png" alt="codejam" class="project"></a>
+                <a href="https://rolling-scopes-school.github.io/bandnl-JSFE2022Q3/online-zoo/pages/main/index.html" target="_blank" class="overflow-link"><img src="./assets/zoo.jpg" alt="animals" class="project"></a>
+                <a href="https://rolling-scopes-school.github.io/bandnl-JSFE2022Q3/songbird/" target="_blank" class="overflow-link"><img src="./assets/bird.jpg" alt="songbird" class="project"></a>
+                <a href="https://rolling-scopes-school.github.io/bandnl-JSFE2022Q3/plants/" target="_blank" class="overflow-link"><img src="./assets/plants.png" alt="palnts" class="project"></a>
+              </div>
+              <div class="arrow__after arrow_show"></div>
+            </div>
+          </section>
+          <section id="lang" class="lang cont">
+            <h2 class="title">Languages</h2>
+            <div class="lang-cont container">
+              <ul>
+                <li class="language">Belarussian - native speaker</li>
+                <li class="language">Russian - native speaker</li>
+                <li class="language">English - B2</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="footer">
+          <div class="wraper">
+            <div class="footer-cont">
+              <a href="https://rs.school/"><img src="./assets/rss.svg" class="rss" alt="rss"></a>
+              <span class="dev">Designed by Danila Ban ©RSSchool 2022</span>
+              <a href="https://github.com/bandnl"><img src="./assets/github_logo_big.png" class="git-footer" alt="git"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+  </body>
+</html>

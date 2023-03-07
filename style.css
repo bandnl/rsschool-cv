@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Roboto;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.wraper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+.head {
+    background-color: #024E2B;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.head__photo {
+    width: 100%;
+    height: 100vh;
+    max-width: 200px;
+    max-height: 300px;
+    margin: 4% 5% 3% 0;
+    background-image: url("./assets/photo.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 25%;
+    background-size: cover;
+    border: rgba(255, 255, 255, 0.5) solid 2px;
+}
+.head__container {
+    color: aliceblue;
+    width: 100%;
+}
+.head__name h1{
+    font-size: 4em;
+    font-weight: 500;
+}
+.head__prof {
+    font-size: 2em;
+    padding: 3px;
+    background-color: #006638;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+.head__contacts {
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+.contacts:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.sp {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.navig {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.navig li a {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.navig li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.navig li:hover {
+    text-decoration: underline;
+}
+
+.cont {
+    margin: 20px 0;
+    background-color: rgba(15%, 28%, 22%, 0.1);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container {
+    font-size: 1.1em;
+    box-sizing: border-box;
+    line-height: 1.5;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(15%, 28%, 22%, 0.1);
+}
+
+.info-content span {
+    margin-left: 15px;
+}
+
+.link-bntu {
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.link-bntu:hover {
+    text-decoration: underline;
+}
+
+.cours {
+    margin-left: 25px;
+    list-style: circle;
+}
+.cours__link:hover {
+    text-decoration: underline;
+}
+
+.skills-list {
+    margin-left: 15px;
+}
+
+.icon {
+    margin: auto 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.js {
+    background-image: url("./assets/js.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.html {
+    background-image: url("./assets/html5-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.css {
+    background-image: url("./assets/css-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.scss {
+    background-image: url("./assets/sass-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.git {
+    background-image: url("./assets/git-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.wp {
+    background-image: url("./assets/wp.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.projects__wrapper {
+    position: relative;
+    min-height: 226px;
+    padding: 0;
+}
+
+.arrow__before {
+    content: url("./assets/arrow.png");
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 5px;
+    transform: rotate(-90deg);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.arrow__after {
+    content: url("./assets/arrow.png");
+    position: absolute;
+    top: calc(50% - 16px);
+    right: 5px;
+    transform: rotate(90deg);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.arrow_show {
+    visibility: visible;
+}
+
+.arrow_show:hover {
+    scale: 1.2;
+}
+
+.arrow_hide {
+    visibility: hidden;
+}
+
+.overflow-link {
+    overflow: visible;
+}
+
+.projects-cont {
+    position: absolute;
+    padding: 13px 13px;
+    display: flex;
+    justify-content: space-around;
+    gap: 13px;
+}
+
+.opened {
+    right: 0px;
+}
+
+.closed {
+    left: 0px;
+}
+
+.project {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: rgba(15%, 28%, 22%, 0.9);
+}
+.footer-cont {
+    margin: 5px 0 3px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.rss {
+    width: 100px;
+}
+.git-footer {
+    width: 100px;
+}
+
+.dev {
+    align-self: flex-end;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
